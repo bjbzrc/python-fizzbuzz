@@ -1,13 +1,4 @@
-for i in range (1,101):
-    if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz")
-        continue
-    elif i % 3 == 0:
-        print("Fizz")
-        continue
-    elif i % 5 == 0:
-        print("Buzz")
-        continue
-    else:
-        print(i)
-        continue
+for i in range(1,101):
+    fizz = 'Fizz' if i%3==0 else ''
+    buzz = 'Buzz' if i%5==0 else ''
+    print(f'{fizz}{buzz}' or i)
